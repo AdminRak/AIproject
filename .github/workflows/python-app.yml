@@ -35,7 +35,7 @@ jobs:
         # exit-zero treats all errors as warnings. The GitHub editor is 127 chars wide
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: Install dependencies
-      run: pip install -r requirements.txt
+      run: pip install -r AI_image_to_pdf/requirements.txt
 
     - name: Convert image to PDF
-      run: convert_image_to_pdf.py
+      run: AI_image_to_pdf/convert_image_to_pdf.py
