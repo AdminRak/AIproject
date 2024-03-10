@@ -37,6 +37,8 @@ jobs:
     - name: Install dependencies
       run: pip install -r AI_image_to_pdf/requirements.txt
 
-    - name: Convert image to PDF
+    - name: Set execute permission for the script
       run: chmod +x AI_image_to_pdf/convert_image_to_pdf.py
-
+      
+    - name: Convert image to PDF
+      run: AI_image_to_pdf/convert_image_to_pdf.py
