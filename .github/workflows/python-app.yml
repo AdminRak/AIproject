@@ -40,5 +40,9 @@ jobs:
     - name: Set execute permission for the script
       run: chmod +x AI_image_to_pdf/convert_image_to_pdf.py
       
-    - name: Convert image to PDF
-      run: AI_image_to_pdf/convert_image_to_pdf.py
+    - name: Run convert_image_to_pdf.py
+      run: python AI_image_to_pdf/convert_image_to_pdf.py
+      shell: bash
+      env:
+       pythonLocation: /Users/rakeshpandala/actions-runner/_work/_tool/Python/3.12.2/x64
+
